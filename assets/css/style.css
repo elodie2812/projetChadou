@@ -14,7 +14,7 @@
 @font-face {
     font-family: handlove;
     src: url('../polices/handlove.ttf') format('truetype');
-    src: url('../polices/handlove.otf') format('OpenTypeFont')
+    src: url('../polices/handlove.otf') format('OpenTypeFont');
 }
 
 /* Eléments principaux de la page */
