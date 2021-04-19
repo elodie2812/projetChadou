@@ -2,18 +2,19 @@
 /* Définition des polices personnalisées */
 @font-face {
     font-family: HelveticaNeue;
-    src: url('../polices/HelveticaNeue.ttc');
+    src: url('../polices/HelveticaNeue.ttc') format('truetype');
 }
 
 @font-face {
     font-family: BohemeFloral;
-    src: url('../polices/BohemeFloral.ttf');
+    src: url('../polices/Boheme_Floral.ttf') format('truetype');
+    src: url('../polices/Boheme Floral.ttf') format('truetype');
 }
 
 @font-face {
     font-family: handlove;
-    src: url('../polices/handlove.ttf');
-    src: url('../polices/handlove.otf')
+    src: url('../polices/handlove.ttf') format('truetype');
+    src: url('../polices/handlove.otf') format('OpenTypeFont')
 }
 
 /* Eléments principaux de la page */
@@ -23,7 +24,7 @@ body {
 }
 /* Header*/
 h1{
-    font-family: Boheme Floral, 'Times New Roman', Times, serif;
+    font-family: BohemeFloral, 'Times New Roman', Times, serif;
     color: white;
     width: 90%;
     height: 200px;
