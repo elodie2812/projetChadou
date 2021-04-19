@@ -25,18 +25,22 @@ body {
 h1{
     font-family: Boheme Floral, 'Times New Roman', Times, serif;
     color: white;
+    width: 90%;
     height: 200px;
     font-size: 1.5em;
+    text-align: center;
+    padding-top: 70px;
 }
 header{
-background-image: url("../images/header.png");
-background-size: cover;
-height: 358px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-size: 50px;
+    background-image: url("../images/header.png");
+    background-size: cover;
+    width: 100%;
+    height: 358px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 .slogan{
@@ -44,18 +48,18 @@ font-size: 50px;
     text-transform: uppercase;
     font-family: HelveticaNeue;
     font-size: x-large;
-    height: 200px;    
+    width: 90%;
+    height: 200px;  
+    text-align: center;  
 }
 
 /* Menu Navigation */
 
-nav ul{
-
+nav ul {
     list-style: none;
     display: flex;
     font-size: 25px;
-    float: right;
-    padding-left: 700px;
+    padding-left: 50%;
 }
 
 nav li{
@@ -74,11 +78,25 @@ nav a:hover {
     color: grey;
     text-decoration: none; 
 }
-.burger{
-    color: white;
+.burger {
+    text-decoration: none;
+    color: rgb(205, 114, 0);
+    font-size: 1.2em;
 }
-#navIcon{
+#navIcon {
     display: none;
+}
+
+.shop {
+    color: rgb(205, 114, 0);
+    font-size: 0.8em;
+    position: relative;
+    bottom: 300px;
+    left: 40%;
+}
+
+.shop:hover {
+    color:grey;
 }
 
 /* Corps */
@@ -203,6 +221,10 @@ figcaption {
 
 .click img{
     width: 10%;
+}
+
+#collect:hover {
+    cursor: pointer;
 }
 
 #fil {
@@ -383,6 +405,9 @@ footer p {
 /*Media Queries*/
 @media screen and (max-width: 992px)
 {
+    nav ul {
+        padding-left: 0;
+    }
     .top{
         display: flex;
         flex-direction:column;
@@ -450,6 +475,29 @@ footer p {
 
 @media screen AND (max-width: 680px) 
 {
+    .burger {
+        padding-left: 320px;
+    }
+    .slogan {
+        display: none;
+    }
+
+    .shop {
+        padding-top: 100px;
+    }
+
+    /* on masque les éléments de la navbar */
+    .navig {
+        display: none;
+      }
+      /* on affiche l'icone du menu-burger */
+    #navIcon{
+        display: block;
+      }
+    nav ul {
+        padding-left: 0;
+    }
+
     .top{
         display: flex;
         flex-direction:column;
@@ -469,6 +517,10 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    #fil {
+        padding-top: 90px;
     }
 
     #container2{
@@ -504,15 +556,5 @@ footer p {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-}
-@media screen and (max-width: 680px){
-    /* on masque les éléments de la navbar */
-    a{
-      display: none;
-    }
-    /* on affiche l'icone du menu-burger */
-    #navIcon{
-      display: block;
     }
 }
