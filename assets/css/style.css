@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Boheme Floral;
+    src: url("Boheme Floral");
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("HelveticaNeue");
+
+
+}
+h1{
+    font-family: Boheme Floral, 'Times New Roman', Times, serif;
+    color: white;
+    height: 200px;
+    font-size: 1.5em;
+}
+header{
+background-image: url("../images/header.png");
+background-size: cover;
+height: 358px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+}
+.slogan{
+color: white;
+text-transform: uppercase;
+font-family: HelveticaNeue;
+font-size: x-large;
+height: 200px;    
+}
+ul{
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    float: right;
+    padding-left: 700px;
+}
+li{
+    display: flex;
+    font-family: HelveticaNeue;
+    text-transform: uppercase;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(205, 114, 0);
+}
+
+nav a:hover {
+    color: grey;
+    text-decoration: underline; 
+}
+.burger{
+    color: white;
+}
+#navIcon{
+    display: none;
+}
+@media screen and (max-width: 680px){
+    /* on masque les éléments de la navbar */
+    a{
+      display: none;
+    }
+    /* on affiche l'icone du menu-burger */
+    #navIcon{
+      display: block;
+    }
+  }
